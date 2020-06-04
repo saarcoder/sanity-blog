@@ -7,10 +7,10 @@ const hiddenDocTypes = listItem =>
 
 export default () =>
   S.list()
-    .title('Content')
+    .title('Inhalt')
     .items([
       S.listItem()
-        .title('Settings')
+        .title('Einstellungen')
         .icon(MdSettings)
         .child(
           S.editor()
@@ -19,18 +19,18 @@ export default () =>
             .documentId('siteSettings')
         ),
       S.listItem()
-        .title('Blog posts')
+        .title('Artikel')
         .schemaType('post')
-        .child(S.documentTypeList('post').title('Blog posts')),
+        .child(S.documentTypeList('post').title('Artikel')),
       S.listItem()
-        .title('Authors')
+        .title('Autoren')
         .icon(MdPerson)
         .schemaType('author')
-        .child(S.documentTypeList('author').title('Authors')),
+        .child(S.documentTypeList('author').title('Autoren')),
       S.listItem()
-        .title('Categories')
+        .title('Kategorien')
         .schemaType('category')
-        .child(S.documentTypeList('category').title('Categories')),
+        .child(S.documentTypeList('category').title('Kategorien')),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
