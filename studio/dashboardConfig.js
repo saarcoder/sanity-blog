@@ -6,7 +6,7 @@ export default {
         templateRepoId: 'sanity-io/sanity-template-gatsby-blog'
       }
     },
-    {name: 'structure-menu'},
+    { name: 'structure-menu' },
     {
       name: 'project-info',
       options: {
@@ -15,7 +15,7 @@ export default {
             name: 'netlify',
             options: {
               description:
-                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
+                'Achtung: Die Seiten sind statische builds und müssen re-deployed werden, um Änderungen live zu sehen, wenn Dokumente veröffentlicht werden.',
               sites: [
                 {
                   buildHookId: '5ed4d5b08db2b87edfdbdd54',
@@ -25,7 +25,7 @@ export default {
                 },
                 {
                   buildHookId: '5ed4d5b077d227e3a23793f6',
-                  title: 'Blog Website',
+                  title: 'Webseiten-Blog mit Sanity',
                   name: 'sanity-blog-web-1wo6e126',
                   apiId: '0ed17ad3-2aa1-46df-8fdf-1421f85b9897'
                 }
@@ -39,15 +39,19 @@ export default {
             value: 'https://github.com/saarcoder/sanity-blog',
             category: 'Code'
           },
-          {title: 'Frontend', value: 'https://sanity-blog-web-1wo6e126.netlify.app', category: 'apps'}
+          {
+            title: 'Frontend',
+            value: 'https://sanity-blog-web-1wo6e126.netlify.app',
+            category: 'apps'
+          }
         ]
       }
     },
-    {name: 'project-users', layout: {height: 'auto'}},
+    { name: 'project-users', layout: { height: 'auto' } },
     {
       name: 'document-list',
-      options: {title: 'Letzte Artikel', order: '_createdAt desc', types: ['post']},
-      layout: {width: 'medium'}
+      options: { title: 'Letzte Artikel', order: '_createdAt desc', types: ['post'] },
+      layout: { width: 'medium' }
     }
   ]
 }

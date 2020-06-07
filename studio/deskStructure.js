@@ -10,7 +10,7 @@ export default () =>
     .title('Inhalt')
     .items([
       S.listItem()
-        .title('Einstellungen')
+        .title('Einstellungen')Blog
         .icon(MdSettings)
         .child(
           S.editor()
